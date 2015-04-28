@@ -1,2 +1,176 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic.css);
+/* clearfix style  */
+.clearfix:after {
+  content: " ";
+  /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
+
+/* css reset */
+/* * Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
 body {
-  background: #333333; }
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* media query ranges */
+/* global variables */
+html {
+  font-family: "Droid Serif", "serif"; }
+
+body {
+  font-size: 16px;
+  background-color: #EFF9EC; }
+
+.footer_links {
+  text-align: center; }
+
+li {
+  display: inline;
+  text-align: center;
+  text-decoration: none;
+  word-spacing: 25px; }
+  li a {
+    text-decoration: none;
+    color: #14273D; }
+
+@media only screen and (max-width:640px) {
+  ul.nav {
+    display: none; } }
+@media only screen and (min-width:641px) {
+  ul.nav {
+    text-align: center;
+    word-spacing: 15px;
+    padding: 13px; } }
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px; }
+  @media only screen and (max-width:640px) {
+    h1 {
+      color: #57C1C7;
+      border: 1px solid;
+      background-color: #389FA8;
+      padding: 5px;
+      font-size: 12px; } }
+  @media only screen and (min-width:641px) {
+    h1 {
+      border-top: 1px solid #389FA8;
+      border-bottom: 1px solid #389FA8;
+      padding: 31px;
+      color: #57C1C7; } }
+
+h2 {
+  margin-top: 30px;
+  margin-left: 30px; }
+  h2 a {
+    font-size: 26px;
+    color: #14273D;
+    text-decoration: none;
+    border-bottom: 2px dotted #389FA8; }
+
+h3 {
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  color: #57C1C7; }
+  h3 a {
+    color: #14273D;
+    text-decoration: none;
+    border-bottom: 2px dotted #389FA8; }
+
+p {
+  margin-top: 30px;
+  margin-left: 30px;
+  line-height: 1.5; }
+
+article p {
+  margin-top: 0; }
+
+@media only screen and (min-width:641px) {
+  .content {
+    float: left;
+    width: 70%; } }
+@media only screen and (min-width:641px) {
+  .content {
+    border-right: 1px solid; } }
+
+@media only screen and (max-width:640px) {
+  aside {
+    display: none; } }
+@media only screen and (min-width:641px) {
+  aside p {
+    margin-top: 15px; } }
+@media only screen and (min-width:641px) {
+  aside a {
+    text-decoration: none;
+    color: #57C1C7; } }
+aside .read {
+  background-color: #389FA8;
+  text-align: center;
+  margin-top: 35px;
+  padding: 18px;
+  margin-left: 30px; }
+@media only screen and (min-width:641px) {
+  aside {
+    float: right;
+    width: 30%;
+    margin-top: -50px; } }
+
+@media only screen and (min-width:641px) {
+  .read {
+    margin-right: 20px; } }
+
+h4 {
+  color: #389FA8;
+  font-size: 20px;
+  font-weight: 500; }
+  @media only screen and (min-width:641px) {
+    h4 {
+      margin-left: 30px;
+      margin-top: 80px; } }
+
+@media only screen and (max-width:640px) {
+  .left {
+    display: none; } }
+@media only screen and (min-width: 641px) and (max-width: 960px) {
+  .left {
+    display: none; } }
+
+ul.footer_links {
+  margin-top: 50px;
+  border-top: 1px solid #57C1C7;
+  padding: 20px;
+  word-spacing: 25px; }
+  @media only screen and (min-width:641px) {
+    ul.footer_links {
+      text-align: left; } }
+
+@media only screen and (min-width:641px) {
+  .left {
+    text-align: right; } }

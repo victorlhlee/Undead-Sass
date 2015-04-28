@@ -1,0 +1,111 @@
+
+@media only screen and (max-width:640px){
+
+body{
+  background: $mediumlight-color;
+}
+
+.row li{
+  display: inline;
+  background: red;
+  color: $darkest-color;
+}
+
+.row h1{
+  padding: 25px;
+  border: 2px solid $mediumlight-color;
+}
+
+.content h2{
+  color: $mediumlight-color;
+
+}
+
+.content article{
+  float: left;
+  width: 448px;
+  background: $light-color;
+}
+
+.content{
+  width: 900px;
+}
+
+.content aside{
+  float: right;
+  width: 192px;
+  background: $light-color;
+}
+}
+
+.content h2{
+  font-size: 18px;
+}
+
+article a:link{
+  text-decoration: none;
+  color: $darkest-color;
+
+}
+
+article h3 a:link{
+  color: $mediumlight-color;
+}
+
+/* h4 a:link{
+  color: $mediumlight-color;
+  font-size: 16px;
+}
+
+.a read_more{
+  color: $mediumlight-color;
+} 
+ */
+
+/* .content{
+  background: $light-color;
+} 
+ */
+
+/* .content article{
+  background: $light-color;
+  float: left;
+  width: 330px;
+  height: 420px;
+  font-size: 13px;
+  border: 1px solid $mediumlight-color;
+  margin-left: 9px;
+  padding: 10px;
+}
+
+aside{
+  background: $light-color;
+  float: right;
+  width: 192px;
+  height: 400px;
+  font-size: 13px;
+  border: 1px solid $mediumlight-color;
+  margin-right: 9px;
+  padding: 20px;
+}
+
+
+a:link{
+  display: inline;
+  text-decoration: none;
+  color: $darkest-color;
+}
+
+.row{
+  background: $light-color;
+}
+
+.row li{
+  display: inline;
+  font-size: 12px;
+
+}
+
+.nav{
+  text-align: center;
+}
