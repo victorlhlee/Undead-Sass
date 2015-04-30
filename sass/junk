@@ -1,111 +1,178 @@
+@import "partials/reset";
+@import "partials/settings";
 
-@media only screen and (max-width:640px){
+@import "http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic.css";
 
+/* -----global variables----- */
+
+// colors   
+$black: #14273D;
+$teal: #389FA8;
+$lightteal: #57C1C7;
+$white: #EFF9EC;
+
+html{
+  font-family: "Droid Serif", "serif";
+}
+ 
 body{
-  background: $mediumlight-color;
+  font-size: 16px;
+  background-color: $white;
+} 
+
+.footer_links{
+  text-align: center;
+  margin-top: 50px;
+  border-top: 1px solid $lightteal;
+  padding: 20px;
+  word-spacing: 25px;
 }
 
-.row li{
+li{
   display: inline;
-  background: red;
-  color: $darkest-color;
+  text-align: center;
+  word-spacing: 25px;
+
+  a{
+    text-decoration: none;
+    color: $black;
+  }
 }
 
-.row h1{
-  padding: 25px;
-  border: 2px solid $mediumlight-color;
+/* -----layout----- */
+ul.nav{
+  @media #{$small-only}{
+    display: none;
+  }
+
+  @media #{$medium-up}{
+    text-align: center;
+    word-spacing: 15px;
+    padding: 15px;
+  }
 }
 
-.content h2{
-  color: $mediumlight-color;
+h1{
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 
+  @media #{$small-only}{
+    color: $lightteal;
+    border: 1px solid;
+    background-color: $teal;
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  @media #{$medium-up}{
+    border-top: 1px solid $teal;
+    border-bottom: 1px solid $teal;
+    padding: 30px;
+    color: $lightteal;
+  }
 }
 
-.content article{
-  float: left;
-  width: 448px;
-  background: $light-color;
+h2{
+  margin-top: 30px;
+  margin-left: 30px;
+
+  a{
+    font-size: 25px;
+    color: $black;
+    text-decoration: none;
+    border-bottom: 2px dotted $teal;
+  }
+}
+
+h3{
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  color: $lightteal;
+
+  a{
+    color: $black;
+    text-decoration: none;
+    border-bottom: 2px dotted $teal;
+  }
+}
+
+p{
+    margin-left: 30px;
+    line-height: 1.5;
 }
 
 .content{
-  width: 900px;
+  @media #{$large-up}{
+    border-right: 1px solid $teal;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 75%;
+    float: left;
+  }
 }
-
-.content aside{
-  float: right;
-  width: 192px;
-  background: $light-color;
-}
-}
-
-.content h2{
-  font-size: 18px;
-}
-
-article a:link{
-  text-decoration: none;
-  color: $darkest-color;
-
-}
-
-article h3 a:link{
-  color: $mediumlight-color;
-}
-
-/* h4 a:link{
-  color: $mediumlight-color;
-  font-size: 16px;
-}
-
-.a read_more{
-  color: $mediumlight-color;
-} 
- */
-
-/* .content{
-  background: $light-color;
-} 
- */
-
-/* .content article{
-  background: $light-color;
-  float: left;
-  width: 330px;
-  height: 420px;
-  font-size: 13px;
-  border: 1px solid $mediumlight-color;
-  margin-left: 9px;
-  padding: 10px;
-}
-
 aside{
-  background: $light-color;
-  float: right;
-  width: 192px;
-  height: 400px;
-  font-size: 13px;
-  border: 1px solid $mediumlight-color;
-  margin-right: 9px;
-  padding: 20px;
+  @media #{$small-only}{
+    display: none;
+  }
+
+  @media #{$large-up}{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 25%;
+    float: right;
+    line-height: 25px;
+    padding-top: 30px;
+  }
+
+  p{
+    @media #{$medium-up}{
+      margin-top: 15px;
+    }
+  }
+
+  a{
+    text-decoration: none;
+    color: $lightteal;
+  }
+}
+  .read{
+    text-align: center;
+    background-color: $teal;
+    margin-top: 35px;
+    padding: 18px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+
+h4{
+    margin-top: 50px;
+    margin-left: 30px;
+    color: $teal;
+    font-size: 18px;
+  }
+
+.left{
+  @media #{$small-only}{
+    display: none;
+  }
+
+  @media #{$medium-only}{
+    display: none;
+  }
+
+  @media #{$large-up}{
+    float: right;
+    margin-top: 15px;
+    margin-right: 50px;
+  }
 }
 
+.footer_links{
+  @media #{$large-up}{
+    text-align: left;
+  }
 
-a:link{
-  display: inline;
-  text-decoration: none;
-  color: $darkest-color;
-}
-
-.row{
-  background: $light-color;
-}
-
-.row li{
-  display: inline;
-  font-size: 12px;
-
-}
-
-.nav{
-  text-align: center;
 }
